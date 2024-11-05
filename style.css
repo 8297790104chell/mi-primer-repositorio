@@ -1,0 +1,151 @@
+body  {
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+    background: linear-gradient(#FFDAB9); 
+    height: 100vh;
+
+}
+
+.Formulario{
+    position : relative;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    top: 50%;
+    left: 50%;
+transform: translate(-50%, -50%);
+width: 400px;
+background-color:#FFDAB9	;
+border-radius: 10px;
+justify-content: center;
+align-items: center;
+}
+
+
+.formulario h1{
+    text-align: center;
+    padding: 0  0 20px 0;
+    border-bottom: 1px solid silver;
+
+   
+}
+
+
+.formulario form{
+    padding:0 40px ;
+    box-sizing: border-box;
+
+}
+
+form .username{
+    position: relative;
+    background: linear-gradient(#adadad); 
+    margin: 30px 0;
+
+}
+
+.username imput{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16 px 
+    borde none;
+    background: none;
+    outline: none;
+}
+
+
+.username label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(50%);
+    font-size: 16px;
+    position: none;
+    transition: .5s;
+}
+
+.Formulario .contrasena input{
+    margin-bottom: 15px;
+}
+
+.username span::before{
+    counter-reset:'' ;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width:0% ;
+    height: 2px;
+    background-color: bisque;
+    transition: .5s;
+}
+
+.username input:focus label,
+.username input:focus label {
+top: -5px;
+Color: #CC6CE7;
+}
+
+.username input:focus span_::before,
+.username input:focus span_::before {
+width: 100%
+}
+
+.recordar{
+    margin: -5px 0 20px 5px; 
+    color: black;
+    cursor: pointer;
+}
+.recordar:hover{
+    text-decoration: underline;
+}
+
+form .boton input{
+    margin: 10px;
+    height: 30px;
+    width: 80px;
+    background-color:lightblue;
+
+}
+
+form .registrarse a{
+    color: black;
+}
+
+.Formulario .linea{
+    width: 300px;
+    height: 1px;
+    background-color: black;
+}
+
+.Formulario form .username input{
+    display: flex;
+    width: 250px;
+    height: 25px;
+    border-radius: 10px;
+    margin-bottom: -10px;
+}
+
+.Formulario form .contrasena input{
+    display: flex;
+    width: 250px;
+    height: 25px;
+    border-radius: 10px;
+}
+
+.Formulario form .boton input{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Formulario form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
