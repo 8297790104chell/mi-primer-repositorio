@@ -29,6 +29,7 @@ body{
 	width: 100%;
 	padding-bottom:10px;
 }
+
 .contenedor article {
 	/*background-color: #CF3;*/
 	float: left;
@@ -72,14 +73,13 @@ body{
 }
 .contenedor article p {
 	letter-spacing: 0.2em;
-	font-family:
-	"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-family:Verdana, Geneva, sans-serif;
 	/*word-spacing: 0.2em;*/
 }
 .contenedor article label {
 	font-size: 14px;
 	font-weight: bold;
-	color: #306;
+	color: #06C; 
 	float: left;
 }
 .contenedor header .logo img {
@@ -101,7 +101,7 @@ body{
 	padding: 0px;
 	height: 32px;
 	width: 100%;
-	margin top: 10px;
+	margin-top:10px;
  
 }
 .contenedor nav .menu li {
@@ -130,6 +130,34 @@ body{
 	float: left;
 	width: 652px;
 }
+.container{
+	width:90%;
+	padding:10px;
+	margin: 100px auto;
+	display: flex;
+    flex-direction: row; 
+	text-align: center;	
+}
+
+
+.box{
+	  width: 250px;  
+	  margin: 0 10px;
+	  box-shadow:0 0 20px 2px rgba( 0,0,0, .1);
+	  transition:1s;  
+}
+ .box img{
+	display: block;
+	width: 100%;
+	height: 190px;
+}
+.box:hover{
+	 transform: scale(1.3);
+	 z-index: 2;
+}
+
+
+
 .contenedor footer img {
 	float: right;
 	height: 45px;
@@ -152,14 +180,6 @@ body{
 .contenedor footer p {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 16px;
-	font-variant: small-caps;
-}
-.contenedor .articulos article div div p strong em {
-	font-size: 17px;
-	font-variant: small-caps;
-}
-.contenedor .articulos article div div p em strong {
-	font-size: 17px;
 	font-variant: small-caps;
 }
 </style>
@@ -186,51 +206,59 @@ body{
     </ul>
     </nav>
     
-    <div class="articulos">
-    <article>
-    <h2 class="titulo"><strong><em>Quienes somos?</em></strong></h2>
-    <p><img src= "img/vaca.png" width="380" height="182"/></p>
-    <div>
-      <div>
-        <p><strong><em>El Parque Zoológico Nacional Arq. Manuel Valverde Podestá -ZOODOM-es una institución educativa, científica y recreativa de servicio público adscrito al Ministerio de Medio Ambiente y Recursos Naturales. El La idea de un zoológico moderno fue una iniciativa que surgió en abril de 1972, Comienza a llevarse a la práctica por los arquitectos Manuel Valverde Podestá y Eugenio Pérez Montás en septiembre del mismo año. Quienes visitaron diferentes zoológicos, principalmente África y Estados Unidos, para intercambiar ideas acerca de la construcción de las instalaciones del parque.</em></strong></p>
-        <p><em><strong>Después de realizar varias actividades para obtener un lugar propicio y convertirlo en un magnífico zoológico, el 26 de noviembre de 1974 llegaron animales procedentes de Onahandja (África) y Estados Unidos. Junto a éstos, fueron traídos de las exhibiciones del antiguo zoológico (de la Avenida Bolívar) monos Rhesus y arañas, buitres, pumas, cocodrilos, loros, guacamayos, cacatúas, tortugas, entre otros.</strong></em></p>
-        <p><em><strong>Luego de este proceso el día 3 de enero del año 1975, fue promulgada la ley 114 que crea el Parque Zoológico Nacional Dominicano, como centro destinado al fomento de la educación, la investigación y la cultura, en lo que concierne a las ciencias biológicas en general, así como a la preservación de la fauna nacional y el 5 de julio del mismo año fue inaugurado.</strong></em></p>
-        <p><em><strong>Ley No. 78-88 designa con el nombre de Arquitecto Manuel Valverde Podestá, al Parque Zoológico Nacional, el día 15 de Octubre de 1988.</strong></em><strong></strong></p>
-      </div>
+  <div class="container">
+    <div class="box">
+    <a href="chokers.html"><img src="img/gorila.png" /></a>
+ <h3 class="titulo">Gorila<h3>
+ 
     </div>
-    <div>
-    <div>
-    <br />
-<label><a href="Nosotros.html"></a></label>
-    </article>
+    
+  <div class="box">
+ <a href="Aretes.html"> <img src="img/caiman.png" /></a>
+  <h3 class="titulo">Caiman<h3>
   
-  <article></article>
-      
-   
-      
-      <article>
-        <p><img src="img/elefante.png"/><span class="titulo"><img src="img/caiman.png"/></span></p> 
-    
-      </article>
-      <article>
-        <h2 class="titulo"><img src="img/monos.png"/><img src="img/vaca.png"/></h2>
-<label><a href="Biografia de Jean.html"></a></label>
-    
-    </article>
     </div>
-    <aside>
-     
-    <img src="img/tucan.png"/>
-      <img src="img/gorila.png" />
-     <img src="img/flamenco.png" />
-     <img src="img/hipopotamo.png">  
-   <img src="img/dino.png" />
-            
-               
-  </aside>
+    
+    <div class="box">
+     <a href="Diademas.html"><img src="img/dino.png" /></a>
+  <h3 class="titulo">Dinosaurio<h3>
+  
+    </div>
+      
+      <div class="box">
+    <a href="Argollas.html"> <img src="img/elefante.png" /></a>
+  <h3 class="titulo">Elefante<h3>
+    </div>
+       
+  </div>
+       
+       <div class="container">
+    <div class="box">
+     <a href="Pulseras.html"><img src="img/tucan.png" /></a>
+ <h3 class="titulo">Tucan<h3>
+    </div>
+    
+  <div class="box">
+ <a href="Phonestrap.html"><img src="img/hipopotamo.png" /></a>
+  <h3 class="titulo">Hipopotamo<h3>
+  </div>
+    
+    <div class="box">
+  <a href="Llaveros.html"> <img src="img/aguila.png" /></a>
+  <h3 class="titulo">Aguila<h3>
+  </div>
+      
+      <div class="box">
+    <a href="sujetadores.html"><img src="img/flamenco.png"/></a>
+  <h3 class="titulo">Flamenco<h3>
+    </div>
+       
+       </div>
+  
+  
     
     <footer>
-    <p><em>Donde la naturaleza co</em>bra vida y la diversión no tiene límites. <a href="https://www.facebook.com/reel/751079670319015" target="_blank"><img src="img/fc.png"/></a>
+    <p><em><strong>Donde la naturaleza co</strong></em>bra vida y la diversión no tiene límites. <a href="https://www.facebook.com/reel/751079670319015" target="_blank"><img src="img/fc.png"/></a>
       <a href="https://www.instagram.com/zologico_667/?hl=es-la" target="_blank"><img src="img/ig.png"/></a>
       <a href="https://www.tiktok.com/@yahittzoo/video/7240206875755679019?q=zoo&t=1709763910430" target="_blank"><img src="img/tiktok.png" /></a>      </p>
     </footer>
